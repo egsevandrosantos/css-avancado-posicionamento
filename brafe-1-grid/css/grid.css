@@ -1,0 +1,67 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container::after,
+.container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class^="grid-"],
+[class*=" grid-"] {
+  float: left;
+  margin: 0 10px;
+  display: block;
+  min-height: 1px;
+}
+
+.grid-1 {
+  width: calc(100% / 12 - 20px);
+}
+
+.grid-2 {
+  width: calc(100% / 12 * 2 - 20px);
+}
+
+.grid-3 {
+  width: calc(100% / 12 * 3 - 20px);
+}
+
+.grid-4 {
+  width: calc(100% / 12 * 4 - 20px);
+}
+
+.grid-5 {
+  width: calc(100% / 12 * 5 - 20px);
+}
+
+.grid-6 {
+  width: calc(100% / 12 * 6 - 20px);
+}
+
+.grid-7 {
+  width: calc(100% / 12 * 7 - 20px);
+}
+
+.grid-8 {
+  width: calc(100% / 12 * 8 - 20px);
+}
+
+.grid-9 {
+  width: calc(100% / 12 * 9 - 20px);
+}
+
+.grid-10 {
+  width: calc(100% / 12 * 10 - 20px);
+}
+
+.grid-11 {
+  width: calc(100% / 12 * 11 - 20px);
+}
+
+.grid-12 {
+  width: calc(100% - 20px);
+}
