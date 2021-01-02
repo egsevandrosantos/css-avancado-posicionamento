@@ -1,0 +1,43 @@
+body,
+p,
+h1,
+h2,
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Georgia, serif;
+  color: #252525;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Menu */
+.header-info {
+  font-size: 0.875em;
+  background: #d6d3c8;
+  padding: 7px 0;
+  text-align: center;
+}
+
+.header-logo img {
+  margin: 40px auto;
+}
