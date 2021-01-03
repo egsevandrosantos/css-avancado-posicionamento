@@ -262,6 +262,37 @@ body {
   width: 70px;
 }
 
+@media only screen and (min-width: 740px) and (max-width: 980px) {
+  .produtos {
+    width: calc(100% - 220px);
+  }
+}
+@media only screen and (max-width: 739px) {
+  .produtos {
+    width: 100%;
+  }
+
+  .produtos h1 {
+    float: none;
+  }
+
+  .adicionar-produto {
+    float: none;
+    display: inline-block;
+    margin: 10px 0;
+  }
+
+  .produtos-item img {
+    float: none;
+  }
+
+  .produtos-item ul {
+    width: 100%;
+    float: none;
+  }
+}
+
+/* Footer */
 .footer {
   background: #d6d3c8;
   text-align: center;
