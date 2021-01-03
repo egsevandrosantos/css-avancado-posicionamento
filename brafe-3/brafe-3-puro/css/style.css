@@ -157,3 +157,59 @@ body {
   position: relative;
   top: -7px;
 }
+
+.produtos-item {
+  background: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+  margin-top: 20px;
+  position: relative;
+}
+
+.produtos-item::before,
+.produtos-item::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.produtos-item img {
+  float: left;
+}
+
+.produtos-item a {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  text-indent: 100vh;
+  right: 20px;
+  top: 10px;
+  background: url("./../img/edit.svg") no-repeat;
+}
+
+.produtos-item a:hover {
+  background: url("./../img/edit-hover.svg") no-repeat;
+}
+
+.produtos-item ul {
+  float: left;
+  padding: 0 20px;
+  width: calc(100% - 140px);
+}
+
+.produtos-item ul li {
+  padding: 10px 0;
+  font-family: Courier, monospace;
+  font-size: 1.125em;
+  border-bottom: 1px solid #e7e4d8;
+}
+
+.produtos-item ul li:last-child {
+  border-bottom: none;
+}
+
+.produtos-item ul li span {
+  font-weight: bold;
+  display: inline-block;
+  width: 70px;
+}
