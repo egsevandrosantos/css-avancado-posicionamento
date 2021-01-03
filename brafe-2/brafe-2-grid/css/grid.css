@@ -10,6 +10,7 @@
   clear: both;
 }
 
+.grid-mobile-6,
 [class^="grid-"],
 [class*=" grid-"] {
   float: left;
@@ -67,6 +68,25 @@
   width: calc(100% - 20px);
 }
 
+.grid-mobile-6 {
+  width: calc(50% - 20px);
+}
+
+.row,
+.row-mobile {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.row::after,
+.row::before,
+.row-mobile::after,
+.row-mobile::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 @media only screen and (max-width: 739px) {
   .container {
     max-width: 300px;
@@ -76,6 +96,18 @@
   [class*=" grid-"] {
     float: none;
     width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .grid-mobile-6 {
+    float: left;
+    width: calc(50% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .row {
     margin-left: 0px;
     margin-right: 0px;
   }
